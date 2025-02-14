@@ -44,10 +44,4 @@ function isValidPhoneNumber($phone_number, $customer_id, $api_key) {
     return in_array(strtoupper($data['phone_type']), $valid_types); //"VALID" type should not be included in $valid_types, as Telesign does not return "VALID" as a phone type.
 }
 
-// Usage example
-$phone_number = "1234567890"; // Replace with actual phone number
-$customer_id = "your_customer_id";
-$api_key = "your_api_key";
-$result = isValidPhoneNumber($phone_number, $customer_id, $api_key);
-var_dump($result);
 ?>
